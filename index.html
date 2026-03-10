@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex App</title>
-    <link rel="stylesheet" href="./css/index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPlatform</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f4f4f4;color:#333}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:#fff;border-bottom:1px solid #ddd}
+nav a{margin:0 15px;text-decoration:none;color:#333}
+button{padding:10px 20px;background:#333;color:#fff;border:none;cursor:pointer}
+main{display:flex;padding:50px;gap:50px;align-items:center}
+.hero-text h1{font-size:40px;margin-bottom:20px}
+.hero-text p{font-size:18px;margin-bottom:30px;color:#555}
+.cta{display:flex;gap:10px}
+.cta input{padding:10px;border:1px solid #ccc;flex:1}
+.hero-images{flex:1;display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:#fff;border:1px solid #ddd;border-radius:8px}
+.card:nth-child(1){grid-column:span 2;height:200px}
+.card:not(:first-child){height:120px}
+</style>
 </head>
 <body>
-
-    <section>
-        <div id="logo"></div>
-
-        <h1>Get a lading page in 2 weeks</h1>
-
-        <div id="img-front"></div>
-    </section>
-
-    <nav>
-        <div class="Icon icon-1"></div>
-        <div class="Icon icon-2"></div>
-        <div class="Icon icon-3"></div>
-    </nav>
-    <main>
-        <!-- BOTÃO TOPO -->
-<button id="topButton" onclick="topAction()">Botão Topo</button>
-
-<!-- BOTÕES INFERIORES -->
-<div class="bottom-buttons">
-    <button onclick="action1()">adquira ja</button>
-    <button onclick="action2()">Learn More</button>
-</div>
-    </main>
+<header>
+    <div class="logo">MyPlatform</div>
+    <nav><a href="#">Soluções</a><a href="#">Preços</a><a href="#">Recursos</a></nav>
+    <button class="btn-top">Começar</button>
+</header>
+<main>
+    <div class="hero-text">
+        <h1>Plataforma digital para expandir seu negócio</h1>
+        <p>Crie sua presença online, venda seus produtos e alcance clientes no mundo inteiro.</p>
+        <div class="cta">
+            <input type="email" placeholder="Digite seu email">
+            <button>Começar</button>
+        </div>
+    </div>
+    <div class="hero-images">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+</main>
 </body>
 </html>
